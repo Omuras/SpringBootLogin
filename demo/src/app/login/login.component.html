@@ -1,0 +1,21 @@
+<div style="display: block" class="container">
+<!-- 2way data binding-->
+  <div class="alert alert-warning" *ngIf='invalidUser'>{{errorMessage}}</div>
+  <label>Username : </label>
+  <input class="inputs" type="text"  id="uid" name="username" [(ngModel)]="username">
+  <label>Password : </label>
+  <input class="inputs" type="password"  id="pass" name="password" [(ngModel)]="password">
+
+</div>
+<br>
+<br>
+
+<div class="container" style="margin: 15px">
+  <button class="btn btn-dark" (click)=CheckLogin()>Log in</button>
+</div>
+
+<!--<div class="container" style="margin: 15px">-->
+<!--  <button class="btn btn-warning" (click)=CheckLogin()>NotImplemented</button>-->
+<!--</div>-->
+
+
